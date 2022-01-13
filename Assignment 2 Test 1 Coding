@@ -1,0 +1,137 @@
+package assignment2;
+import java.util.Scanner;
+
+public class ControlStructureSelectionAndRepetitionStructure {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		//for personal detail
+		String name;
+		String choice;
+		String selection;
+		char gender;
+		int age;
+		double adultticketprice = 55;
+		double childticketprice = 32;
+		String location;
+		String destination;
+		String departure ;
+		String returndate ;
+		double additionalVIP ;
+		int ticketType;
+		int numberOfPassengers;
+		
+		System.out.println("   Welcome to the Ticket Booking System    ");
+		System.out.println();
+		
+		System.out.println("         Do you want to continue?                ");
+		System.out.println("             Yes          No               "); 
+		System.out.println();
+		
+		System.out.print("            Enter Your Choice: ");
+		choice = scan.nextLine();
+		System.out.println();
+	
+		if (choice.equals("Yes")) {
+			System.out.println("         You Can Enter The System.      ");
+		}
+		else {
+			System.out.println("     Thank You for Entering our System.");
+			
+		}
+			System.out.println("************************************************ ");
+	
+			System.out.println();
+			
+			System.out.println("Please fill Up Your Personal Detail.");
+			
+			System.out.print(" Enter Your Name: ");
+			name = scan.nextLine();
+			
+			System.out.print(" Enter Your Age: ");
+			age = scan.nextInt();
+			
+			System.out.print(" Enter Your Gender:");
+			gender = scan.next().charAt(0);
+			
+			System.out.print(" Enter your destination:");
+			destination = scan.nextLine();
+			location = scan.nextLine();
+			System.out.println();
+			
+			System.out.println("           Do you want to proceed?");
+			System.out.println("             Yes              No");
+			System.out.print("Selection: ");
+			selection = scan.nextLine();
+			
+			if(selection.equals("Yes")) {
+				System.out.println("      Your Personal Detail Data Already Save in our System.");
+			}
+			else {
+				System.out.println("        Thank You, " + name);
+				
+			}
+			
+			System.out.println("***************************************************");
+			
+			System.out.println("Please Fill Up Your Ticket Detail.");
+			
+			System.out.println(" You can refer here before make some choice.");
+			
+			System.out.println("****************************************");
+			System.out.println("*Ticket Price/Ticket Type/Trip         *");
+			System.out.println("****************************************");
+			System.out.println("* Adult = RM 55.00 per person          *");
+			System.out.println("* Child = RM 32.00 per person          *");
+			System.out.println("****************************************");
+			System.out.println("* Economic = normal price              *");
+			System.out.println("* VIP      = RM 100                    *");
+			System.out.println("****************************************");
+			System.out.println("* 1. One Way                           *");
+			System.out.println("* 2. Round Trip - 15 % discounts       *");
+			System.out.println("****************************************");
+			System.out.println();
+			
+			System.out.print("Enter Your Trip:");
+			String trip = scan.nextLine();
+			System.out.println();
+			
+			if (trip.equals("One way")) {
+				System.out.println("Please Enter Your Departure Date: ");
+				departure = scan.next();
+			}
+			else {
+				System.out.println("Please Enter Your Departure Date: " );
+				departure = scan.nextLine();
+				System.out.println("Please Enter Your Return Date: " );
+				returndate = scan.nextLine();
+			}
+			System.out.println("How many ny passenger you'd like to bring?");
+			System.out.println();
+			System.out.print("Adult: ");
+			int adult = scan.nextInt();
+			System.out.print("Child: ");
+			int child = scan.nextInt();
+			System.out.println();
+			
+			
+			//if user select 0, the vip will be null because 0 * 100 = 0
+			System.out.println("Please select your ticket type :");
+			System.out.println("0.Economy       1. VIP ");
+			System.out.print("Selection: ");
+			ticketType = scan.nextInt();
+			
+			
+			
+			
+			
+			
+			
+			
+			
+	
+		}
+		
+	}
+
